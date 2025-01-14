@@ -1,11 +1,11 @@
-const express = require('express');
+\const express = require('express');
 const bodyParser = require('body-parser');
 const fs = require('fs');
 const path = require('path');
 const app = express();
 const PORT = 3000;
 
-// Path to the stock data file
+// Path to the stock data file (persistent storage)
 const stockDataFilePath = path.join(__dirname, 'stockData.json');
 
 // Middleware to read stock data from the file
